@@ -1,233 +1,402 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introducción a la Creatividad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
-
 </head>
 <body>
-  <canvas id="starfield"></canvas>
-  <nav class="nav-dots" id="navDots"></nav>
-  <section id="s0">
-    <span class="cap-label">Capítulo 2 · Creatividad e Innovación</span>
-    <p class="hero-quote">
-      "Todas las personas se han topado con la clase de problema que parece
-      imposible de resolver hasta que de repente se revela una solución
-      sorprendentemente simple."
-    </p>
-    <p class="hero-attr">— Edward De Bono</p>
-    <h1>Introducción a la<br><em>Creatividad</em></h1>
-    <p style="font-size:15px; color:var(--dim-bright); max-width:500px; text-align:center; line-height:1.9; margin-top:12px;">
-      Una exploración de ideas, obstáculos, principios y técnicas para
-      despertar el potencial creativo.
-    </p>
-    <p class="scroll-hint">↓ Desplázate para explorar ↓</p>
-  </section>
 
-  <section id="s1">
-    <div class="reveal">
+<canvas id="starfield"></canvas>
 
-      <p class="sec-label">¿Por qué importa?</p>
-      <h2 class="sec-title">Importancia de la Creatividad</h2>
-      <p class="sec-sub">
-        El mundo cambia constantemente. Las soluciones de ayer no resuelven
-        los problemas de hoy. Se necesita pensamiento constructivo, creativo y eficaz.
-      </p>
-      <div class="cards">
-        <div class="imp-card">
-          <div class="imp-title">Desarrollo de países</div>
-          <div class="imp-text">
-            La bonanza de las naciones depende de sus sistemas educativos,
-            ingenieros, científicos e innovadores que producen valor agregado.
-          </div>
-          <div class="imp-icon" style="text-align:center;">🌍</div>
-        </div>
-        <div class="imp-card">
-          <div class="imp-title">Motor del progreso</div>
-          <div class="imp-text">
-            De Bono: la capacidad de generar nuevas ideas es la base del progreso
-            en ciencia, tecnología, arte y organización de la felicidad personal.
-          </div>
-          <div class="imp-icon" style="text-align:center;">💡</div>
-        </div>
+<nav class="nav-dots">
+  <a href="#s0" class="dot-0"></a>
+  <a href="#s1"></a>
+  <a href="#s2"></a>
+  <a href="#s3"></a>
+  <a href="#s4"></a>
+  <a href="#s5"></a>
+  <a href="#s6"></a>
+  <a href="#s7"></a>
+  <a href="#s8"></a>
+</nav>
 
-        <div class="imp-card">
-          <div class="imp-title">Adaptación al cambio</div>
-          <div class="imp-text">
-            Lo único permanente es el cambio. Es preferible generar muchas ideas
-            —aunque algunas fallen— que no producir ninguna.
-          </div>
-          <div class="imp-icon" style="text-align:center;">🔄</div>
-        </div>
+<section id="s0">
+  <span class="cap-label">Capítulo 2 · Creatividad e Innovación</span>
+  <p class="hero-quote">
+    "Todas las personas se han topado con la clase de problema que parece
+    imposible de resolver hasta que de repente se revela una solución
+    sorprendentemente simple."
+  </p>
+  <p class="hero-attr">— Edward De Bono</p>
+  <h1>Introducción a la<br><em>Creatividad</em></h1>
+  <p class="hero-desc">
+    Una exploración de ideas, obstáculos, principios y técnicas para
+    despertar el potencial creativo.
+  </p>
+  <p class="scroll-hint">↓ Desplázate para explorar ↓</p>
+</section>
 
+<section id="s1">
+  <div class="reveal">
+    <p class="sec-label">¿Por qué importa?</p>
+    <h2 class="sec-title">Importancia de la Creatividad</h2>
+    <p class="sec-sub">El mundo cambia constantemente. Las soluciones de ayer no resuelven
+      los problemas de hoy. Se necesita pensamiento constructivo, creativo y eficaz.</p>
+    <div class="cards">
+      <div class="imp-card">
+        <div class="imp-icon">🌍</div>
+        <div class="imp-title">Desarrollo de países</div>
+        <div class="imp-text">La bonanza de las naciones depende de sus sistemas educativos,
+          ingenieros, científicos e innovadores que producen valor agregado.</div>
+      </div>
+      <div class="imp-card">
+        <div class="imp-icon">💡</div>
+        <div class="imp-title">Motor del progreso</div>
+        <div class="imp-text">De Bono: la capacidad de generar nuevas ideas es la base del progreso
+          en ciencia, tecnología, arte y organización de la felicidad personal.</div>
+      </div>
+      <div class="imp-card">
+        <div class="imp-icon">🔄</div>
+        <div class="imp-title">Adaptación al cambio</div>
+        <div class="imp-text">Lo único permanente es el cambio. Es preferible generar muchas ideas
+          —aunque algunas fallen— que no producir ninguna.</div>
       </div>
     </div>
-  </section>
-  <section id="s2">
-    <div class="reveal">
+  </div>
+</section>
 
-      <p class="sec-label">Csikszentmihalyi, 1988</p>
-      <h2 class="sec-title">Los 3 Elementos de la Creatividad</h2>
-      <p class="sec-sub">
-        Ningún elemento funciona solo. La creatividad emerge de la interacción entre los tres.
-      </p>
-      <div class="triangle-wrap">
-        <svg class="tri-svg" viewBox="0 0 360 320">
-          <line x1="180" y1="20"  x2="30"  y2="280" stroke="rgba(59,191,174,.35)" stroke-width="1.5" stroke-dasharray="6 5"/>
-          <line x1="180" y1="20"  x2="330" y2="280" stroke="rgba(59,191,174,.35)" stroke-width="1.5" stroke-dasharray="6 5"/>
-          <line x1="30"  y1="280" x2="330" y2="280" stroke="rgba(59,191,174,.35)" stroke-width="1.5" stroke-dasharray="6 5"/>
-        </svg>
-        <div class="tri-node" style="top:0; left:50%; transform:translateX(-50%);">
-          <div class="tri-circle" style="border-color:var(--purple); background:rgba(155,109,255,.14); box-shadow:0 0 24px rgba(155,109,255,.2);">
-            <span style="font-size:1.7rem">🧠</span>
-            <span class="tri-name" style="color:var(--purple); font-size:.75rem;">Persona</span>
-          </div>
-          <p class="tri-sub">Talento e inclinaciones individuales</p>
+<section id="s2">
+  <div class="reveal">
+    <p class="sec-label">Csikszentmihalyi, 1988</p>
+    <h2 class="sec-title">Los 3 Elementos de la Creatividad</h2>
+    <p class="sec-sub">Ningún elemento funciona solo. La creatividad emerge de la interacción entre los tres.</p>
+    <div class="triangle-wrap">
+      <svg class="tri-svg" viewBox="0 0 360 320">
+        <line x1="180" y1="20"  x2="30"  y2="280" stroke="rgba(59,191,174,.35)" stroke-width="1.5" stroke-dasharray="6 5"/>
+        <line x1="180" y1="20"  x2="330" y2="280" stroke="rgba(59,191,174,.35)" stroke-width="1.5" stroke-dasharray="6 5"/>
+        <line x1="30"  y1="280" x2="330" y2="280" stroke="rgba(59,191,174,.35)" stroke-width="1.5" stroke-dasharray="6 5"/>
+      </svg>
+      <div class="tri-node" style="top:0;left:50%;transform:translateX(-50%);">
+        <div class="tri-circle" style="border-color:var(--purple);background:rgba(155,109,255,.14);box-shadow:0 0 24px rgba(155,109,255,.2);">
+          <span style="font-size:1.7rem">🧠</span>
+          <span class="tri-name" style="color:var(--purple);">Persona</span>
         </div>
-
-        <div class="tri-node" style="bottom:0; left:0;">
-          <div class="tri-circle" style="border-color:var(--teal); background:rgba(59,191,174,.14); box-shadow:0 0 24px rgba(59,191,174,.18);">
-            <span style="font-size:1.7rem">📐</span>
-            <span class="tri-name" style="color:var(--teal); font-size:.75rem;">Campo</span>
-          </div>
-          <p class="tri-sub">Disciplina con sus reglas y estructuras</p>
-        </div>
-
-        <div class="tri-node" style="bottom:0; right:0;">
-          <div class="tri-circle" style="border-color:var(--gold); background:rgba(224,184,90,.12); box-shadow:0 0 24px rgba(224,184,90,.15);">
-            <span style="font-size:1.7rem">🌐</span>
-            <span class="tri-name" style="color:var(--gold); font-size:.75rem;">Ámbito</span>
-          </div>
-          <p class="tri-sub">Contexto que juzga la calidad y originalidad</p>
-        </div>
-
+        <p class="tri-sub">Talento e inclinaciones individuales</p>
       </div>
-      <div class="quote-strip">
-        "Una persona creativa resuelve problemas, elabora productos o define
-        cuestiones nuevas en un campo, de modo que al principio es considerado
-        nuevo, pero que al final llega a ser aceptado en un contexto cultural concreto."
-        <br>
-        <span style="font-size:11px; color:var(--teal); letter-spacing:.1em; margin-top:8px; display:inline-block;">
-          — Howard Gardner, 1995
-        </span>
+      <div class="tri-node" style="bottom:0;left:0;">
+        <div class="tri-circle" style="border-color:var(--teal);background:rgba(59,191,174,.14);box-shadow:0 0 24px rgba(59,191,174,.18);">
+          <span style="font-size:1.7rem">📐</span>
+          <span class="tri-name" style="color:var(--teal);">Campo</span>
+        </div>
+        <p class="tri-sub">Disciplina con sus reglas y estructuras</p>
+      </div>
+      <div class="tri-node" style="bottom:0;right:0;">
+        <div class="tri-circle" style="border-color:var(--gold);background:rgba(224,184,90,.12);box-shadow:0 0 24px rgba(224,184,90,.15);">
+          <span style="font-size:1.7rem">🌐</span>
+          <span class="tri-name" style="color:var(--gold);">Ámbito</span>
+        </div>
+        <p class="tri-sub">Contexto que juzga la calidad y originalidad</p>
       </div>
     </div>
-  </section>
-
-  <section id="s3">
-    <div class="reveal">
-
-      <p class="sec-label">Von Oech, 1987</p>
-      <h2 class="sec-title">10 Obstáculos para la Creatividad</h2>
-      <p class="sec-sub">
-        Trabas mentales que bloquean la capacidad creativa.
-        Toca cada una para descubrir cómo superarla.
-      </p>
-      <div class="obstacle-list" id="obsList"></div>
-
+    <div class="quote-strip">
+      "Una persona creativa resuelve problemas, elabora productos o define
+      cuestiones nuevas en un campo, de modo que al principio es considerado
+      nuevo, pero que al final llega a ser aceptado en un contexto cultural concreto."
+      <br>
+      <span class="quote-attr">— Howard Gardner, 1995</span>
     </div>
-  </section>
-  <section id="s4">
-    <div class="reveal">
+  </div>
+</section>
 
-      <p class="sec-label">Gelb, 1999 · 7 Principios</p>
-      <h2 class="sec-title">Los Principios de Da Vinci</h2>
-      <p class="sec-sub">
-        Para desarrollar la inteligencia y ser más creativos.
-        Pasa el cursor sobre cada pétalo para ver el consejo.
-      </p>
-      <div class="davinci-wheel" id="davinciWheel">
-        <div class="wheel-center">"Leonardo<br>Da<br>Vinci"</div>
+<section id="s3">
+  <div class="reveal">
+    <p class="sec-label">Von Oech, 1987</p>
+    <h2 class="sec-title">10 Obstáculos para la Creatividad</h2>
+    <p class="sec-sub">Trabas mentales que bloquean la capacidad creativa. Toca cada una para descubrir cómo superarla.</p>
+    <div class="obstacle-list">
+
+      <div class="obs-item">
+        <input type="checkbox" id="o1" class="obs-toggle">
+        <label for="o1" class="obs-label">
+          <span class="obs-num">01</span>
+          <span class="obs-title">Esta es la respuesta correcta</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">La vida ofrece muchas respuestas correctas. Tener una sola idea nos hace vulnerables. Hay que buscar múltiples soluciones y reestructurar los modelos existentes.</div>
       </div>
 
-      <p style="font-size:11px; color:var(--dim-bright); text-align:center;">
-        "Estudiemos la ciencia del arte y el arte de la ciencia" — Leonardo da Vinci
-      </p>
-
-    </div>
-  </section>
-  <section id="s5">
-    <div class="reveal">
-
-      <p class="sec-label">De Bono · Pensamiento Lateral</p>
-      <h2 class="sec-title">Creatividad Seria</h2>
-      <p class="sec-sub">8 técnicas del pensamiento creativo para generar ideas utilizables</p>
-      <div class="techniques-grid">
-        <div class="tech-chip">Pausa creativa</div>
-        <div class="tech-chip">Foco simple</div>
-        <div class="tech-chip">Cuestionamiento</div>
-        <div class="tech-chip">Alternativas</div>
-        <div class="tech-chip">Abanico de conceptos</div>
-        <div class="tech-chip">Provocaciones y movimiento</div>
-        <div class="tech-chip">Aportación del azar</div>
-        <div class="tech-chip">Seis sombreros</div>
+      <div class="obs-item">
+        <input type="checkbox" id="o2" class="obs-toggle">
+        <label for="o2" class="obs-label">
+          <span class="obs-num">02</span>
+          <span class="obs-title">Eso es ilógico</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">Las decisiones humanas se basan en lo percibido, no solo en la lógica. A veces actuar "ilógicamente" abre puertas inesperadas. Usa metáforas para ver el problema desde otra perspectiva.</div>
       </div>
-      <p class="sec-label" style="margin-top:48px; margin-bottom:20px;">
-        Los Seis Sombreros para Pensar
-      </p>
-      <div class="hats-row" id="hatsRow"></div>
-    </div>
-  </section>
-  <section id="s6">
-    <div class="reveal">
 
-      <p class="sec-label">Tony Buzan, 2003</p>
-      <h2 class="sec-title">Mapas Mentales</h2>
-      <p class="sec-sub">7 reglas para estructurar el pensamiento creativo visualmente</p>
-      <svg id="mindmap" viewBox="0 0 720 430" style="max-width:720px; width:100%;"></svg>
-
-    </div>
-  </section>
-  <section id="s7">
-    <div class="reveal">
-
-      <p class="sec-label">Material Adicional</p>
-      <h2 class="sec-title">Presentación del Capítulo 2</h2>
-      <iframe
-        src="Intro_creativ.pdf"
-        width="860"
-        height="550"
-        style="border:1px solid rgba(155,109,255,.3); border-radius:12px; margin-top:20px;"
-      ></iframe>
-
-    </div>
-  </section>
-  <section id="s8">
-    <div class="reveal">
-
-      <p class="sec-label">Síntesis del Capítulo 2</p>
-      <h2 class="sec-title">Lo que aprendiste</h2>
-      <div class="summary-ring">
-        <div class="ring-item">
-          <strong>Inventores históricos</strong>
-          China y Occidente como antecedentes de la creatividad humana
-        </div>
-        <div class="ring-item">
-          <strong>3 elementos</strong>
-          Persona · Campo · Ámbito en interacción creativa
-        </div>
-        <div class="ring-item">
-          <strong>Obstáculos</strong>
-          Trabas mentales y cómo contrarrestarlas
-        </div>
-        <div class="ring-item">
-          <strong>7 principios</strong>
-          De Leonardo Da Vinci para desarrollar la inteligencia
-        </div>
-        <div class="ring-item">
-          <strong>8 técnicas</strong>
-          De pensamiento lateral de Edward De Bono
-        </div>
-        <div class="ring-item">
-          <strong>Mapas mentales</strong>
-          7 reglas de Tony Buzan para organizar ideas
-        </div>
+      <div class="obs-item">
+        <input type="checkbox" id="o3" class="obs-toggle">
+        <label for="o3" class="obs-label">
+          <span class="obs-num">03</span>
+          <span class="obs-title">Siga las instrucciones al pie de la letra</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">Casi todos los avances en arte, ciencia y negocios ocurrieron porque alguien desafió las reglas. Einstein, Picasso, Gandhi rompieron convencionalismos en sus campos.</div>
       </div>
-      <button class="cta-btn">Explorar técnicas de De Bono en detalle ↗</button>
-    </div>
-  </section>
-  <script src="script.js"></script>
 
+      <div class="obs-item">
+        <input type="checkbox" id="o4" class="obs-toggle">
+        <label for="o4" class="obs-label">
+          <span class="obs-num">04</span>
+          <span class="obs-title">Sea práctico</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">La actitud práctica es buena para evaluar ideas, pero pésima para generarlas. Pregúntate ¿qué pasaría si...? y usa las respuestas como trampolín para nuevas ideas.</div>
+      </div>
+
+      <div class="obs-item">
+        <input type="checkbox" id="o5" class="obs-toggle">
+        <label for="o5" class="obs-label">
+          <span class="obs-num">05</span>
+          <span class="obs-title">Evite la ambigüedad</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">En la generación de ideas, un exceso en lo específico ahoga la imaginación. La ambigüedad permite ver algo e imaginar algo diferente.</div>
+      </div>
+
+      <div class="obs-item">
+        <input type="checkbox" id="o6" class="obs-toggle">
+        <label for="o6" class="obs-label">
+          <span class="obs-num">06</span>
+          <span class="obs-title">Equivocarse es vergonzoso</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">Es mejor tener ideas equivocadas que no tener ninguna. Los errores nos muestran lo que no funciona. Edison falló cientos de veces antes de inventar el foco.</div>
+      </div>
+
+      <div class="obs-item">
+        <input type="checkbox" id="o7" class="obs-toggle">
+        <label for="o7" class="obs-label">
+          <span class="obs-num">07</span>
+          <span class="obs-title">Juguetear es mera frivolidad</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">El juego es el laboratorio de las ideas. Muchas ideas "ridículas" sirven de trampolín para llegar a ideas valiosas que no habrían surgido de otra manera.</div>
+      </div>
+
+      <div class="obs-item">
+        <input type="checkbox" id="o8" class="obs-toggle">
+        <label for="o8" class="obs-label">
+          <span class="obs-num">08</span>
+          <span class="obs-title">Esa no es mi especialidad</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">La creatividad cruza fronteras. Mirar un problema desde una disciplina distinta a la propia puede generar soluciones que los especialistas no ven.</div>
+      </div>
+
+      <div class="obs-item">
+        <input type="checkbox" id="o9" class="obs-toggle">
+        <label for="o9" class="obs-label">
+          <span class="obs-num">09</span>
+          <span class="obs-title">No quiero hacer el ridículo</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">La complacencia frena el progreso. La cultura japonesa lo dice claro: "Esto es perfecto, por tanto, ahora mejorémoslo." Lo que va bien puede ir aún mejor.</div>
+      </div>
+
+      <div class="obs-item">
+        <input type="checkbox" id="o10" class="obs-toggle">
+        <label for="o10" class="obs-label">
+          <span class="obs-num">10</span>
+          <span class="obs-title">No tengo creatividad</span>
+          <span class="obs-arrow">›</span>
+        </label>
+        <div class="obs-body">Todos somos creativos. Probablemente somos diez veces más creativos de lo que pensamos. La creatividad se practica y se mejora con técnicas concretas.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="reveal">
+    <p class="sec-label">Gelb, 1999 · 7 Principios</p>
+    <h2 class="sec-title">Los Principios de Da Vinci</h2>
+    <p class="sec-sub">Para desarrollar la inteligencia y ser más creativos. Pasa el cursor sobre cada pétalo para ver el consejo.</p>
+    <div class="davinci-wheel">
+      <div class="wheel-center">"Leonardo<br>Da<br>Vinci"</div>
+      <div class="petal p0">
+        <span class="petal-label">Curiosidad</span>
+        <div class="petal-tip">Hazte preguntas que inicien con qué, quién, cómo, cuándo, dónde, por qué. Escríbelas sin preocuparte si conoces la respuesta.</div>
+      </div>
+      <div class="petal p1">
+        <span class="petal-label">Experimentación</span>
+        <div class="petal-tip">No aceptes ideas ajenas por fe. Piensa por ti mismo, aprende de los errores y persevera. La experimentación es la verdadera maestra.</div>
+      </div>
+      <div class="petal p2">
+        <span class="petal-label">Sentidos</span>
+        <div class="petal-tip">Agudiza el oído, vista, tacto, olfato y gusto. Como un atleta entrena músculos, Leonardo entrenó sus sentidos y facultades de observación.</div>
+      </div>
+      <div class="petal p3">
+        <span class="petal-label">Ambigüedad</span>
+        <div class="petal-tip">Tolera la incertidumbre. El subconsciente funciona mejor si tras un trabajo intenso tomamos un descanso. La serenidad ante la paradoja es clave.</div>
+      </div>
+      <div class="petal p4">
+        <span class="petal-label">Arte / Ciencia</span>
+        <div class="petal-tip">"Estudiemos la ciencia del arte y el arte de la ciencia." El cerebro creativo usa los dos hemisferios: lógica e imaginación juntos.</div>
+      </div>
+      <div class="petal p5">
+        <span class="petal-label">Ejercitar cuerpo</span>
+        <div class="petal-tip">Leonardo practicaba equitación, natación y esgrima. La mente creativa vive en un cuerpo activo. Mueve el cuerpo para mover las ideas.</div>
+      </div>
+      <div class="petal p6">
+        <span class="petal-label">Conectar dispares</span>
+        <div class="petal-tip">La habilidad de ver relaciones y patrones entre elementos dispares es la esencia de la creatividad. Este principio contempla el enfoque sistémico.</div>
+      </div>
+    </div>
+    <p class="davinci-footer">"Estudiemos la ciencia del arte y el arte de la ciencia" — Leonardo da Vinci</p>
+  </div>
+</section>
+
+<section id="s5">
+  <div class="reveal">
+    <p class="sec-label">De Bono · Pensamiento Lateral</p>
+    <h2 class="sec-title">Creatividad Seria</h2>
+    <p class="sec-sub">8 técnicas del pensamiento creativo para generar ideas utilizables</p>
+    <div class="techniques-grid">
+      <div class="tech-chip">Pausa creativa</div>
+      <div class="tech-chip">Foco simple</div>
+      <div class="tech-chip">Cuestionamiento</div>
+      <div class="tech-chip">Alternativas</div>
+      <div class="tech-chip">Abanico de conceptos</div>
+      <div class="tech-chip">Provocaciones y movimiento</div>
+      <div class="tech-chip">Aportación del azar</div>
+      <div class="tech-chip">Seis sombreros</div>
+    </div>
+    <p class="sec-label" style="margin-top:48px;margin-bottom:20px;">Los Seis Sombreros para Pensar</p>
+    <div class="hats-row">
+      <div class="hat-card">
+        <span class="hat-icon">⚪</span>
+        <div class="hat-name">Blanco</div>
+        <div class="hat-role">Hechos e Información</div>
+      </div>
+      <div class="hat-card">
+        <span class="hat-icon">🔴</span>
+        <div class="hat-name">Rojo</div>
+        <div class="hat-role">Emociones y Sentimientos</div>
+      </div>
+      <div class="hat-card">
+        <span class="hat-icon">⚫</span>
+        <div class="hat-name">Negro</div>
+        <div class="hat-role">Juicio Negativo</div>
+      </div>
+      <div class="hat-card">
+        <span class="hat-icon">🟡</span>
+        <div class="hat-name">Amarillo</div>
+        <div class="hat-role">Juicio Positivo</div>
+      </div>
+      <div class="hat-card">
+        <span class="hat-icon">🟢</span>
+        <div class="hat-name">Verde</div>
+        <div class="hat-role">Creatividad y Nuevas Ideas</div>
+      </div>
+      <div class="hat-card">
+        <span class="hat-icon">🔵</span>
+        <div class="hat-name">Azul</div>
+        <div class="hat-role">Control y Organización</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s6">
+  <div class="reveal">
+    <p class="sec-label">Tony Buzan, 2003</p>
+    <h2 class="sec-title">Mapas Mentales</h2>
+    <p class="sec-sub">7 reglas para estructurar el pensamiento creativo visualmente</p>
+    <svg id="mindmap" viewBox="0 0 720 430" style="max-width:720px;width:100%;">
+      <defs>
+        <marker id="ma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#9b6dff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <line x1="360" y1="215" x2="160" y2="80"  stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <line x1="360" y1="215" x2="580" y2="80"  stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <line x1="360" y1="215" x2="80"  y2="230" stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <line x1="360" y1="215" x2="160" y2="365" stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <line x1="360" y1="215" x2="560" y2="365" stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <line x1="360" y1="215" x2="645" y2="230" stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <line x1="360" y1="215" x2="360" y2="375" stroke="rgba(155,109,255,.35)" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ma)"/>
+      <circle cx="360" cy="215" r="50" fill="rgba(155,109,255,.28)" stroke="#9b6dff" stroke-width="1.5"/>
+      <text x="360" y="220" text-anchor="middle" font-family="Space Mono,monospace" font-size="15" fill="#9b6dff" font-weight="700">Creatividad</text>
+      <circle cx="160" cy="80"  r="36" fill="rgba(224,184,90,.18)"  stroke="#e0b85a" stroke-width="1.5"/>
+      <text x="160" y="85"  text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#e0b85a" font-weight="700">Persona</text>
+      <circle cx="580" cy="80"  r="36" fill="rgba(59,191,174,.18)"  stroke="#3bbfae" stroke-width="1.5"/>
+      <text x="580" y="85"  text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#3bbfae" font-weight="700">Campo</text>
+      <circle cx="80"  cy="230" r="38" fill="rgba(224,80,110,.18)"  stroke="#e0506e" stroke-width="1.5"/>
+      <text x="80"  y="235" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#e0506e" font-weight="700">Obstáculos</text>
+      <circle cx="160" cy="365" r="38" fill="rgba(224,184,90,.18)"  stroke="#e0b85a" stroke-width="1.5"/>
+      <text x="160" y="360" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#e0b85a" font-weight="700">Principios</text>
+      <text x="160" y="375" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#e0b85a" font-weight="700">Da Vinci</text>
+      <circle cx="560" cy="365" r="38" fill="rgba(155,109,255,.18)" stroke="#9b6dff" stroke-width="1.5"/>
+      <text x="560" y="360" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#9b6dff" font-weight="700">Técnicas</text>
+      <text x="560" y="375" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#9b6dff" font-weight="700">De Bono</text>
+      <circle cx="645" cy="230" r="36" fill="rgba(255,154,122,.18)" stroke="#ff9a7a" stroke-width="1.5"/>
+      <text x="645" y="235" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#ff9a7a" font-weight="700">Ámbito</text>
+      <circle cx="360" cy="375" r="38" fill="rgba(59,191,174,.18)"  stroke="#3bbfae" stroke-width="1.5"/>
+      <text x="360" y="370" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#3bbfae" font-weight="700">Mapas</text>
+      <text x="360" y="385" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#3bbfae" font-weight="700">Mentales</text>
+    </svg>
+  </div>
+</section>
+
+<section id="s7">
+  <div class="reveal">
+    <p class="sec-label">Material Adicional</p>
+    <h2 class="sec-title">Presentación del Capítulo 2</h2>
+    <iframe class="pdf-frame" src="Intro_creativ.pdf"></iframe>
+  </div>
+</section>
+
+<section id="s8">
+  <div class="reveal">
+    <p class="sec-label">Síntesis del Capítulo 2</p>
+    <h2 class="sec-title">Lo que aprendiste</h2>
+    <div class="summary-ring">
+      <div class="ring-item">
+        <strong>Inventores históricos</strong>
+        China y Occidente como antecedentes de la creatividad humana
+      </div>
+      <div class="ring-item">
+        <strong>3 elementos</strong>
+        Persona · Campo · Ámbito en interacción creativa
+      </div>
+      <div class="ring-item">
+        <strong>Obstáculos</strong>
+        Trabas mentales y cómo contrarrestarlas
+      </div>
+      <div class="ring-item">
+        <strong>7 principios</strong>
+        De Leonardo Da Vinci para desarrollar la inteligencia
+      </div>
+      <div class="ring-item">
+        <strong>8 técnicas</strong>
+        De pensamiento lateral de Edward De Bono
+      </div>
+      <div class="ring-item">
+        <strong>Mapas mentales</strong>
+        7 reglas de Tony Buzan para organizar ideas
+      </div>
+    </div>
+    <button class="cta-btn">Explorar técnicas de De Bono en detalle ↗</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
